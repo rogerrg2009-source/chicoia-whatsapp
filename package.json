@@ -1,0 +1,16 @@
+{
+  "name": "chicoia-whatsapp",
+  "version": "1.0.0",
+  "description": "Servidor WhatsApp da ChicoIA",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "express": "^4.21.2"
+  }
+}
