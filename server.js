@@ -66,9 +66,13 @@ console.log(JSON.stringify(body, null, 2));
     }
 
     res.sendStatus(200);
-  } catch (error) {
-    console.error(error);
-    res.sendStatus(500);
+ } catch (error) {
+  console.error(
+    "ERRO WHATSAPP:",
+    JSON.stringify(error.response?.data || error.message, null, 2)
+  );
+  res.sendStatus(500);
+}
   }
 });
 
